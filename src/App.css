@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+/* src/App.css */
+
+/* ¡Importante! Debes importar el CSS de Bootstrap en tu index.js o App.js globalmente */
+/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+
+.app-container {
+    /* Fondo muy oscuro, casi negro */
+    background-color: #0d0d1a; 
+    /* Degradado sutil para simular el espacio */
+    background-image: radial-gradient(at top, rgba(30, 0, 60, 0.5) 0%, #0d0d1a 70%), 
+                      /* Simulación de estrellas/ruido sutil (placeholder) */
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#noise)" opacity="0.15"/></svg>');
+    
+    min-height: 100vh;
+    width: 100%;
+    /* Estilo de la fuente si no estás usando una personalizada */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    overflow: hidden; /* Ocultar barras de desplazamiento si los elementos de fondo se salen */
+    position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Opcional: Estilo para todo el cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://t3.ftcdn.net/jpg/03/53/02/42/360_F_353024251_u6f33z5rVWc52ItyEsnqLQAzoGBa6grq.jpg");
 }
