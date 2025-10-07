@@ -1,0 +1,229 @@
+/* ========================================
+   FOOTER STYLES - Space Kids Foundation
+   ======================================== */
+
+/* Contenedor principal */
+.footer-container {
+  background-color: #00002cb4;
+  color: #ffffff;
+  padding: 30px 0;
+  width: 100%;
+  position: relative;
+}
+
+/* Grid del contenido */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+/* ========================================
+   SECCIÓN IZQUIERDA - Texto legal
+   ======================================== */
+.footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer-text strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+
+/* ========================================
+   SECCIÓN CENTRAL - Logo
+   ======================================== */
+.footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.footer-logo {
+  max-height: 90px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+
+/* ========================================
+   SECCIÓN DERECHA - Redes sociales
+   ======================================== */
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.1);
+}
+
+.social-btn:active {
+  transform: scale(0.95);
+}
+
+.social-btn svg {
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+
+/* ========================================
+   RESPONSIVE - Tablets
+   ======================================== */
+@media (max-width: 992px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .footer-left {
+    justify-content: center;
+  }
+  
+  .footer-text {
+    text-align: center;
+  }
+  
+  .footer-right {
+    justify-content: center;
+  }
+  
+  .footer-logo {
+    max-height: 70px;
+  }
+}
+
+
+/* ========================================
+   RESPONSIVE - Mobile grande
+   ======================================== */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 25px 0;
+  }
+
+  .footer-content {
+    padding: 0 15px;
+    gap: 25px;
+  }
+  
+  .footer-text {
+    font-size: 13px;
+  }
+
+  .footer-text strong {
+    font-size: 14px;
+  }
+  
+  .footer-logo {
+    max-height: 65px;
+  }
+  
+  .social-icons {
+    gap: 12px;
+  }
+  
+  .social-btn {
+    padding: 8px;
+  }
+
+  .social-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+
+/* ========================================
+   RESPONSIVE - Mobile pequeño
+   ======================================== */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    gap: 20px;
+    padding: 0 12px;
+  }
+  
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .footer-text strong {
+    font-size: 13px;
+    margin-bottom: 3px;
+  }
+  
+  .footer-logo {
+    max-height: 55px;
+  }
+  
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-btn {
+    padding: 7px;
+  }
+  
+  .social-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
