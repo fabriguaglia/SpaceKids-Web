@@ -11,6 +11,7 @@ function App() {
     <Header />
       <Routes>
         <Route path="/" element={<Menu />} />
+        
         <Route path="/about" element={<Nosotros />} />
       </Routes>
     </BrowserRouter>
