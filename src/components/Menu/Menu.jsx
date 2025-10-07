@@ -16,27 +16,27 @@ const BoltIcon = () => (
 const sectionsData = [
     { 
         title: "Nuestros Proyectos", 
-        text: "Explora las innovaciones que definen nuestro futuro. Desde IA hasta bioingeniería, desafiamos los límites de lo posible.", 
-        buttonText: "Ver Portafolio", 
+        text: "Siempre estamos mirando hacia el horizonte estrellado en busca de nuevas aventuras y desafíos. Nuestro compromiso con la innovación nos lleva más allá de lo conocido. Con proyectos emocionantes, exploramos nuevos horizontes estelares en busca de aventuras y desafíos. ¡Acompáñanos en esta emocionante travesía mientras exploramos nuevos territorios en el universo!", 
+        buttonText: "Descubre nuestros proyectos", 
         variant: "primary" 
     },
     { 
         title: "Últimas Noticias", 
-        text: "Mantente al día con nuestros avances clave, alianzas estratégicas y descubrimientos científicos que están cambiando el mañana.", 
-        buttonText: "Leer el Blog", 
-        variant: "info" 
+        text: "Mantente al día con las últimas noticias de la fundación", 
+        buttonText: "Explora las últimas noticias aquí", 
+        variant: "primary" 
     },
     { 
         title: "Nuestros Partners", 
-        text: "Conoce a los líderes de la industria que comparten nuestra visión y nos ayudan a construir un ecosistema tecnológico global.", 
+        text: "Nos esforzamos por inspirar y educar a las futuras generaciones, contando con la generosidad y colaboración de nuestros socios y otras entidades que comparten nuestra visión de un futuro espacial prometedor", 
         buttonText: "Conectarse", 
-        variant: "success" 
+        variant: "primary" 
     },
     { 
         title: "Fondo de Donaciones", 
-        text: "Apoya nuestra investigación y desarrollo. Cada contribución impulsa la próxima gran revolución tecnológica.", 
-        buttonText: "Donar Ahora", 
-        variant: "danger" 
+        text: "Hemos otorgado más de 10,000 becas en América Latina gracias a tus donaciones. ¡Tu ayuda asegura que ningun niño se quede atrás, brindandoles oportunidades vitales para el futuro!.", 
+        buttonText: "Conoce como donar", 
+        variant: "primary" 
     },
 ];
 
@@ -90,18 +90,17 @@ const Menu = () => {
                     <div className="horizontal-panel intro-panel d-flex justify-content-center align-items-center">
                         <Container className="main-content-container text-center">
                             <div className="logo-placeholder">
-                                Space Kids<span className="logo-red-part"> Fundation</span>
+                                Space Kids<span className="logo-blue-part"> Fundation</span>
                             </div>
                             <div className="update-badge my-3">
                                 <span className="badge-text">SOÑEMOS TODOS JUNTOS HACIA EL FUTURO</span>
                             </div>
                             <h1 className="main-title">
-                                Descubre nuevas ideas, adquiere habilidades y amplía tus horizontes
-educativos con nuestra amplia gama de actividades. ¡Es hora de explorar, aprender y crecer juntos!
+                                Descubre nuevas ideas, adquiere habilidades y amplía tus horizontes educativos con nuestra amplia gama de actividades. ¡Es hora de explorar, aprender y crecer juntos!
                             </h1>
                             <Button variant="dark" className="get-started-button">
                                 <BoltIcon />
-                                Get started
+                                Conócenos.
                             </Button>
                         </Container>
                     </div>
