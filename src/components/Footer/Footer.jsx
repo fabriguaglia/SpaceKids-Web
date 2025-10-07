@@ -1,14 +1,59 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import Logopng from './logo.png';
 import './Footer.css';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Footer() {
   const navigate = useNavigate();
+  const footerRef = useRef(null);
   
-  const handleInscripcionPage = () => {
-    navigate('/Inscripcion');
-  };
+  useEffect(() => {
+    // Animación de entrada del footer con GSAP
+    gsap.fromTo(
+      footerRef.current,
+      {
+        opacity: 0,
+        y: 50
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: footerRef.current,
+          start: "top bottom-=100",
+          end: "bottom",
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+
+    // Animación para los iconos sociales
+    gsap.fromTo(
+      ".social-btn",
+      {
+        scale: 0,
+        opacity: 0
+      },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 0.5,
+        stagger: 0.1,
+        ease: "back.out(1.7)",
+        scrollTrigger: {
+          trigger: footerRef.current,
+          start: "top bottom-=50",
+        }
+      }
+    );
+  }, []);
+
 
   const handleInstagramClick = () => {
     window.open('https://www.instagram.com/spacekidsfoundation/', '_blank');
@@ -23,7 +68,7 @@ function Footer() {
   };
 
   return (
-    <footer className="footer-container">
+    <footer ref={footerRef} className="footer-container">
       <div className="footer-content">
         
         {/* Sección izquierda: Texto legal */}
@@ -82,7 +127,6 @@ function Footer() {
                 <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
               </svg>
             </button>
-
           </div>
         </div>
       </div>

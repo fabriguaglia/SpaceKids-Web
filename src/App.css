@@ -19,9 +19,22 @@
     position: relative;
 }
 
-/* Opcional: Estilo para todo el cuerpo */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url("https://t3.ftcdn.net/jpg/03/53/02/42/360_F_353024251_u6f33z5rVWc52ItyEsnqLQAzoGBa6grq.jpg");
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://t3.ftcdn.net/jpg/03/53/02/42/360_F_353024251_u6f33z5rVWc52ItyEsnqLQAzoGBa6grq.jpg");
 }
