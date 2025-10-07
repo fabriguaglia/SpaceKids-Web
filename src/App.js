@@ -3,6 +3,7 @@ import "./App.css"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Menu from './components/Menu/Menu';
 import Header from "./components/Header/Header"
+import Nosotros from './components/Aboutus/Nosotros';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
     <Header />
       <Routes>
         <Route path="/" element={<Menu />} />
+        <Route path="/Aboutus" element={<Nosotros />} />
       </Routes>
     </BrowserRouter>
   );
