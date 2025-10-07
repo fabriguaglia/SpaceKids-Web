@@ -23,7 +23,7 @@ const Header = () => {
                     <Nav className="mx-auto nav-links-custom"> 
                         <Nav.Link href="#about">Sobre nosotros</Nav.Link>
                         <Nav.Link href="#actividades">Actividades Educativas</Nav.Link>
-                        <Nav.Link href="#proyectos">Poryectos</Nav.Link>
+                        <Nav.Link href="#proyectos">Proyectos</Nav.Link>
                         <Nav.Link href="#edespacial">Educación Espacial</Nav.Link>
                         <Nav.Link href="#noticias">Noticias</Nav.Link> 
                         <Nav.Link href="#donaciones">Donaciones</Nav.Link> 
