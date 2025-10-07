@@ -21,18 +21,20 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     {/* El menú principal se ordena automáticamente en móvil */}
                     <Nav className="mx-auto nav-links-custom"> 
-                        <Nav.Link href="#about">About us</Nav.Link>
-                        <Nav.Link href="#projects">Projects</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
-                        <Nav.Link href="#support">Support</Nav.Link>
+                        <Nav.Link href="#about">Sobre nosotros</Nav.Link>
+                        <Nav.Link href="#actividades">Actividades Educativas</Nav.Link>
+                        <Nav.Link href="#proyectos">Poryectos</Nav.Link>
+                        <Nav.Link href="#edespacial">Educación Espacial</Nav.Link>
+                        <Nav.Link href="#noticias">Noticias</Nav.Link> 
+                        <Nav.Link href="#donaciones">Donaciones</Nav.Link> 
+                        <Nav.Link href="#contacto">Contacto</Nav.Link>                        
                     </Nav>
 
-                    {/* Los botones en el móvil se apilan debajo del menú */}
-                    <Nav className="ml-auto">
+                   {/* <Nav className="ml-auto">
                         <Nav.Link href="#login" className="login-link">Log in</Nav.Link>
-                        {/* Agregamos una clase para margen superior en móvil */}
+                        {/* Agregamos una clase para margen superior en móvil
                         <Button variant="outline-light" className="signup-button mt-2 mt-lg-0">Sign up</Button> 
-                    </Nav>
+                    </Nav> */}
                 </Navbar.Collapse>
             </Container>
         </Navbar>
