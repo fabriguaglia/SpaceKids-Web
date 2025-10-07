@@ -11,7 +11,7 @@ function App() {
     <Header />
       <Routes>
         <Route path="/" element={<Menu />} />
-        <Route path="/Aboutus" element={<Nosotros />} />
+        <Route path="/about" element={<Nosotros />} />
       </Routes>
     </BrowserRouter>
   );
