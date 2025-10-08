@@ -10,8 +10,8 @@ function App() {
   return (
     <BrowserRouter>
         <Header />
-          <Routes>
-            <Route path="/" element={<Menu />} />
+          <Routes>           
+            <Route exact path="/" element={<Menu />} />
             <Route path="/about" element={<Nosotros />} />
           </Routes>
         <Footer />
