@@ -36,13 +36,13 @@
   filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
 }
 
-/* Contenido general */
 .about-content {
-  max-width: 64rem;
+  max-width: 64rem;      /* ancho máximo del bloque */
+  margin: 0 auto;         /* centra el bloque horizontalmente */
   color: white;
   line-height: 1.75;
   font-size: 1.5rem;
-  text-align: center;
+  text-align: left;       /* 👈 cambia de center a left */
 }
 
 .about-content p {
