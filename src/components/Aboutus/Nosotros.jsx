@@ -40,7 +40,11 @@ function Nosotros() {
           <h2 className="about-title">Quiénes Somos</h2>
           <div className="about-content">
             <p>
-              [Escribe aquí información sobre tu empresa, historia y valores fundamentales. Puedes agregar varios párrafos y todo el contenido que necesites.]
+              Somos una organización sin fines de lucro que se dedica a promover la educación y la pasión por el espacio y la tecnología entre jóvenes y niños de toda LATAM.<br />
+              Reconocemos y destacamos la importancia de estas áreas para el futuro y la necesidad de formar a las generaciones más jóvenes. Por ello, nuestra misión en la fundación es clara:
+                preparar a más de un millón de jóvenes para el año 2035, marcando el inicio de la era interplanetaria (2032-2035) <br />
+                Cómo llevamos a cabo esta misión? A través de una amplia gama de proyectos educativos que incluyen cursos, charlas, conferencias, eventos y más. Sin embargo, no lo hacemos solos. <br />
+                Hemos establecido colaboraciones exitosas con gobiernos y organizaciones comprometidas con la educación y la exploración espacial. Además, dependemos del apoyo crucial de empresas que nos permiten invertir en la educación y expandir nuestras operaciones como fundación.
             </p>
           </div>
         </section>
@@ -50,7 +54,8 @@ function Nosotros() {
           <h2 className="about-title">Misión</h2>
           <div className="about-content">
             <p>
-              [Describe aquí la misión de tu empresa y lo que buscan lograr.]
+              Preparar a más de un millón de jóvenes para el año 2035, marcando el inicio de la era interplanetaria (2032-2035). <br />
+              Como fundación nos dedicamos a dotar a estos jóvenes con conocimientos sólidos en tecnología e industria espacial, con el fin de que estén preparados para adaptarse a esta nueva era de descubrimiento y exploración.
             </p>
           </div>
         </section>
@@ -60,7 +65,7 @@ function Nosotros() {
           <h2 className="about-title">Objetivo</h2>
           <div className="about-content">
             <p>
-              [Describe aquí los objetivos principales de tu empresa y metas a futuro.]
+              Nuestro objetivo principal se centra en educar y fomentar el interés de niños y jóvenes en campos cruciales como STEM y áreas específicas como la economía espacial. Estamos comprometidos en inculcar el amor por la ciencia y la tecnología desde una edad temprana.
             </p>
           </div>
         </section>
