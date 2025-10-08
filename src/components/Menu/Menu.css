@@ -3,95 +3,98 @@
 /* --- Estilos de Escritorio (Base) --- */
 
 .menu-container {
-    position: relative;
-    /* Se quita min-height: 100vh en la versión final de escritorio para evitar conflictos con el scroll-anchor,
-       pero se maneja en el media query para móvil. */
+  position: relative;
+  /* min-height ya no es necesario aquí */
+}
+
+/* Espaciador para el Header fijo (asumiendo que tiene una altura fija) */
+.header-spacer {
+    height: 0px; /* Ajusta este valor si tu Header tiene otra altura */
+    display: block;
 }
 
 /* El elemento que define la altura del scroll vertical de la animación */
 .scroll-anchor {
-    position: relative;
-    height: 100vh; /* Altura fija para el pinning en desktop */
+  position: relative;
+  height: 100vh; /* Altura fija para el pinning en desktop */
 }
 
-/* Contenedor del Banner Principal */
+/* --- ESTILOS VISUALES COMPARTIDOS Y DEL BANNER PRINCIPAL --- (Sin cambios en tu código, se mantiene) */
 .main-content-container {
-    padding: 0 15px; 
-    margin-top: -10vh; /* Sube el contenido principal para centrarlo visualmente */
+  padding: 0 15px; 
+  margin-top: -10vh; /* Sube el contenido principal para centrarlo visualmente */
 }
-
-/* --- ESTILOS VISUALES COMPARTIDOS Y DEL BANNER PRINCIPAL --- */
 .logo-placeholder { 
-    font-size: 7rem; 
-    font-weight: 900; 
-    margin-bottom: 2rem; 
-    color: white; 
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
+  font-size: 7rem; 
+  font-weight: 900; 
+  margin-bottom: 2rem; 
+  color: white; 
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
 }
 .logo-blue-part { 
-    color: #4d94ff; 
-    text-shadow: 0 0 8px #4d94ff, 0 0 15px #4d94ff; 
+  color: #4d94ff; 
+  text-shadow: 0 0 8px #4d94ff, 0 0 15px #4d94ff; 
 }
 .main-title { 
-    font-size: 1.5rem; 
-    font-weight: 300; 
-    margin-bottom: 3rem; 
-    color: rgba(255, 255, 255, 0.8); 
-    max-width: 600px; 
-    margin-left: auto; 
-    margin-right: auto; 
-    padding: 0 15px; 
+  font-size: 1.5rem; 
+  font-weight: 300; 
+  margin-bottom: 3rem; 
+  color: rgba(255, 255, 255, 0.8); 
+  max-width: 600px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding: 0 15px; 
 }
 .update-badge {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50px;
-    margin-bottom: 3rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  margin-bottom: 3rem;
 }
 .badge-text {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 .get-started-button { 
-    background-color: rgba(0, 0, 0, 0.5); 
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-    color: white; 
-    padding: 0.8rem 2rem; 
-    font-size: 1.1rem; 
-    border-radius: 8px; 
-    transition: all 0.3s ease; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  color: white; 
+  padding: 0.8rem 2rem; 
+  font-size: 1.1rem; 
+  border-radius: 8px; 
+  transition: all 0.3s ease; 
 }
 .get-started-button:hover { 
-    background-color: #4d94ff; 
-    border-color: #4d94ff; 
+  background-color: #4d94ff; 
+  border-color: #4d94ff; 
 }
 
 
 /* --- ESTILOS DE PANELES DE SECCIÓN (Proyectos, Noticias, etc.) --- */
 .section-content-container {
-    padding: 0 15px; 
-    max-width: 700px;
+  padding: 0 15px; 
+  max-width: 700px;
 }
 .section-title-custom {
-    font-size: 3rem; 
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 2rem;
-    text-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+  font-size: 3rem; 
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
 }
 .section-text-custom {
-    font-size: 1.25rem;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 3rem;
-    line-height: 1.6;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 3rem;
+  line-height: 1.6;
 }
 .section-button-custom {
-    padding: 0.75rem 2rem;
-    font-size: 1.1rem;
-    border-radius: 8px;
-    font-weight: 600;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
 }
 
 
@@ -99,26 +102,25 @@
 
 /* Contenedor que GSAP moverá horizontalmente */
 .horizontal-content-wrapper {
-    display: flex;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: transparent; 
+  display: flex;
+  height: 100vh;
+  position: absolute; /* NECESARIO para que GSAP pueda manipularlo en escritorio */
+  top: 0;
+  left: 0;
+  background-color: transparent; 
 }
 
 /* Cada panel que ocupa 100vw */
 .horizontal-panel {
-    width: 100vw;
-    height: 100vh;
-    flex-shrink: 0;
-    padding: 2rem;
-    z-index: 10;
-    background-color: transparent; /* Fondo transparente para ver el fondo de App.css */
-    /* Flexbox para centrar el contenido vertical y horizontalmente */
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  padding: 2rem;
+  z-index: 10;
+  background-color: transparent; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 
 
@@ -126,60 +128,65 @@
 /* --- RESPONSIVE: Adaptación para Móviles (Pantallas <= 768px) --- */
 /* ------------------------------------------------------------------ */
 @media (max-width: 768px) {
-    
+  
     /* 1. Contenedores principales: Permiten el scroll vertical */
-    .menu-container {
-        min-height: auto; 
-    }
-    .scroll-anchor { 
-        height: auto; /* Deshabilita el pinning de GSAP */
-    }
-    
-    /* 2. Conversión a Vertical */
-    .horizontal-content-wrapper {
-        position: relative; /* Quita el absolute */
-        flex-direction: column; /* Apila los paneles */
-        width: 100% !important; /* Ancho normal */
-        height: auto;
-    }
-    
-    /* 3. Ajuste de Paneles Individuales */
-    .horizontal-panel {
-        width: 100vw;
-        min-height: 80vh; /* Asegura que la sección sea visible, pero permite que el contenido la empuje */
-        height: auto;
-        padding: 1rem;
-    }
-    .intro-panel { 
-        min-height: 100vh; 
-        height: auto;
-        padding-top: 10vh; /* Margen superior para evitar que el header fijo lo cubra */
-    }
-    
-    /* 4. Ajustes de Estilo para la Lectura en Móvil */
-    .main-content-container { 
-        margin-top: 0; /* Elimina el ajuste negativo de desktop */
-    }
-    .logo-placeholder { 
-        font-size: 3.5rem; 
-        margin-bottom: 1rem; 
-    }
-    .main-title { 
-        font-size: 1.1rem; 
-        padding: 0 5px; 
-        margin-bottom: 2rem; 
+    .header-spacer {
+        display: none; /* No es necesario en móvil si el Header no es fijo o si el diseño lo cubre */
     }
 
-    /* Ajustes Específicos para Secciones (Paneles 2-5) */
-    .section-title-custom { 
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
-    .section-text-custom {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-    }
-    .section-button-custom {
-        padding: 0.6rem 1.5rem;
-    }
+  .menu-container {
+    min-height: 100vh; /* Asegura que el contenedor tenga una altura mínima */
+  }
+  
+  .scroll-anchor { 
+    height: auto; /* ✅ Permite que crezca verticalmente */
+    min-height: 100vh; 
+  }
+  
+  /* 2. Conversión a Vertical: CORRECCIÓN CRUCIAL */
+  .horizontal-content-wrapper {
+    position: relative; /* ¡Desactiva el absolute que estaba ocultando el contenido! */
+    flex-direction: column; /* Apila los paneles */
+    width: 100% !important; 
+    height: auto; /* La altura la dará el contenido */
+  }
+  
+  /* 3. Ajuste de Paneles Individuales */
+  .horizontal-panel {
+    width: 100vw;
+    /* Usar min-height para que la sección sea al menos de cierto tamaño, pero pueda crecer */
+    min-height: 80vh; 
+    height: auto;
+  }
+  .intro-panel { 
+    min-height: 100vh; 
+    height: auto;
+  }
+  
+  /* 4. Ajustes de Estilo para la Lectura en Móvil */
+  .main-content-container { 
+    margin-top: 0; 
+  }
+  .logo-placeholder { 
+    font-size: 3.5rem; 
+    margin-bottom: 1rem; 
+  }
+  .main-title { 
+    font-size: 1.1rem; 
+    padding: 0 5px; 
+    margin-bottom: 2rem; 
+  }
+
+  /* Ajustes Específicos para Secciones (Paneles 2-5) */
+  .section-title-custom { 
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .section-text-custom {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .section-button-custom {
+    padding: 0.6rem 1.5rem;
+  }
 }
