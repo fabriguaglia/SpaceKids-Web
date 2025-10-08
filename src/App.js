@@ -11,8 +11,8 @@ function App() {
     <Router>
         <Header />
           <Routes>
-            <Route exact path="/" element={<Menu />} />
-            <Route path="/Nosotros" element={<Nosotros />} />
+            <Route path="/" element={<Menu />} />
+            <Route path="/about" element={<Nosotros />} />
           </Routes>
         <Footer />
     </Router>
