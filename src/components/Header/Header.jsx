@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <Navbar expand="lg" className="header-custom" variant="dark"> 
             <Container fluid>
-                <Navbar.Brand href="#" className="d-flex align-items-center">
+                <Navbar.Brand href="/" className="d-flex align-items-center">
                     <img
                         src={Logo}
                         alt="Logo Zenvato"

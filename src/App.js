@@ -10,12 +10,12 @@ import Footer from "./components/Footer/Footer"
 function App() {
   return (
     <BrowserRouter>
-    <Header />
-      <Routes>
-        <Route path="/" element={<Menu />} />
-        <Route path="/about" element={<Nosotros />} />
-      </Routes>
-    <Footer />
+        <Header />
+          <Routes>           
+            <Route exact path="/" element={<Menu />} />
+            <Route path="/about" element={<Nosotros />} />
+          </Routes>
+        <Footer />
     </BrowserRouter>
   );
 }
