@@ -139,7 +139,7 @@
   }
   
   .scroll-anchor { 
-    height: auto; /* Permite que crezca verticalmente */
+    height: auto; /* ✅ Permite que crezca verticalmente */
     min-height: 100vh; 
   }
   

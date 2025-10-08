@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Container, Button } from 'react-bootstrap';
-import './Menu.css';
+import './Nosotros.css';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -15,27 +15,27 @@ const BoltIcon = () => (
 // Datos de las secciones para mapear
 const sectionsData = [
   { 
-    title: "Nuestros Proyectos", 
-    text: "Siempre estamos mirando hacia el horizonte estrellado en busca de nuevas aventuras y desafíos. Nuestro compromiso con la innovación nos lleva más allá de lo conocido. Con proyectos emocionantes, exploramos nuevos horizontes estelares en busca de aventuras y desafíos. ¡Acompáñanos en esta emocionante travesía mientras exploramos nuevos territorios en el universo!", 
+    title: "Quienes somos", 
+    text: "Somos una organización sin fines de lucro que se dedica a promover la educación y la pasión por el espacio y la tecnología entre jóvenes y niños de toda LATAM. Reconocemos y destacamos la importancia de estas áreas para el futuro y la necesidad de formar a las generaciones más jóvenes. Por ello, nuestra misión en la fundación es clara: preparar a más de un millón de jóvenes para el año 2035, marcando el inicio de la era interplanetaria (2032-2035)", 
     buttonText: "Descubre nuestros proyectos", 
     variant: "primary" 
   },
   { 
-    title: "Últimas Noticias", 
-    text: "Mantente al día con las últimas noticias de la fundación", 
+    title: "Nuestra misión", 
+    text: " Cómo llevamos a cabo esta misión? A través de una amplia gama de proyectos educativos que incluyen cursos, charlas, conferencias, eventos y más. Sin embargo, no lo hacemos solos. Hemos establecido colaboraciones exitosas con gobiernos y organizaciones comprometidas con la educación y la exploración espacial. Además, dependemos del apoyo crucial de empresas que nos permiten invertir en la educación y expandir nuestras operaciones como fundación.", 
     buttonText: "Explora las últimas noticias aquí", 
     variant: "primary" 
   },
   { 
-    title: "Nuestros Partners", 
-    text: "Nos esforzamos por inspirar y educar a las futuras generaciones, contando con la generosidad y colaboración de nuestros socios y otras entidades que comparten nuestra visión de un futuro espacial prometedor", 
+    title: "Objetivo", 
+    text: "Nuestro objetivo principal se centra en educar y fomentar el interés de niños y jóvenes en campos cruciales como STEM y áreas específicas como la economía espacial. Estamos comprometidos en inculcar el amor por la ciencia y la tecnología desde una edad temprana.", 
     buttonText: "Conectarse", 
     variant: "primary" 
   },
   { 
-    title: "Fondo de Donaciones", 
-    text: "Hemos otorgado más de 10,000 becas en América Latina gracias a tus donaciones. ¡Tu ayuda asegura que ningun niño se quede atrás, brindandoles oportunidades vitales para el futuro!.", 
-    buttonText: "Conoce como donar", 
+    title: "Nuestros proyectos", 
+    text: "Siempre estamos mirando hacia el horizonte estrellado en busca de nuevas aventuras y desafíos. Nuestro compromiso con la innovación nos lleva más allá de lo conocido. Con proyectos emocionantes, exploramos nuevos horizontes estelares en busca de aventuras y desafíos.", 
+    buttonText: "Descubre nuestros proyectos", 
     variant: "primary" 
   },
 ];
@@ -113,30 +113,12 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
+      {/* Margen para que el contenido empiece debajo del Header fijo */}
+      <div className="header-spacer"></div> 
 
       <div id="scroll-anchor" className="scroll-anchor">
         <div id="horizontal-content-wrapper" className="horizontal-content-wrapper">
 
-          {/* PANEL 1: BANNER PRINCIPAL (Introducción) */}
-          <div className="horizontal-panel intro-panel d-flex justify-content-center align-items-center">
-            <Container className="main-content-container text-center">
-              <div className="logo-placeholder">
-                Space Kids<span className="logo-blue-part"> Fundation</span>
-              </div>
-              <div className="update-badge my-3">
-                <span className="badge-text">SOÑEMOS TODOS JUNTOS HACIA EL FUTURO</span>
-              </div>
-              <h1 className="main-title">
-                Descubre nuevas ideas, adquiere habilidades y amplía tus horizontes educativos con nuestra amplia gama de actividades. ¡Es hora de explorar, aprender y crecer juntos!
-              </h1>
-              <Button variant="dark" className="get-started-button">
-                <BoltIcon />
-                Deslizá para comenzar
-              </Button>
-            </Container>
-          </div>
-
-          {/* PANELES 2, 3, 4, 5: SECCIONES ADICIONALES (Mismo estilo que el Panel 1) */}
           {sectionsData.map((section, index) => (
             <div 
               key={index} 

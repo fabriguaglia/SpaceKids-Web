@@ -21,13 +21,13 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     {/* El menú principal se ordena automáticamente en móvil */}
                     <Nav className="mx-auto nav-links-custom"> 
-                        <Nav.Link href="/Nosotros">Sobre nosotros</Nav.Link>
-                        <Nav.Link href="#actividades">Actividades Educativas</Nav.Link>
-                        <Nav.Link href="#proyectos">Proyectos</Nav.Link>
-                        <Nav.Link href="#edespacial">Educación Espacial</Nav.Link>
-                        <Nav.Link href="#noticias">Noticias</Nav.Link> 
-                        <Nav.Link href="#donaciones">Donaciones</Nav.Link> 
-                        <Nav.Link href="#contacto">Contacto</Nav.Link>                        
+                        <Nav.Link href="/nosotros">Sobre nosotros</Nav.Link>
+                        <Nav.Link href="/actividades">Actividades Educativas</Nav.Link>
+                        <Nav.Link href="/proyectos">Proyectos</Nav.Link>
+                        <Nav.Link href="/edespacial">Educación Espacial</Nav.Link>
+                        <Nav.Link href="/noticias">Noticias</Nav.Link> 
+                        <Nav.Link href="/donaciones">Donaciones</Nav.Link> 
+                        <Nav.Link href="/contacto">Contacto</Nav.Link>                        
                     </Nav>
 
                    {/* <Nav className="ml-auto">
