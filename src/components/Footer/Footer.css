@@ -2,16 +2,14 @@
    FOOTER STYLES - Space Kids Foundation
    ======================================== */
 
-/* Contenedor principal */
 .footer-container {
   background-color: #00002cb4;
   color: #ffffff;
   padding: 30px 0;
   width: 100%;
-  flex-shrink: 0;
-  margin-top: auto;
+  position: relative;
+  margin-top: auto; /* Esta línea es clave */
 }
-
 
 /* Grid del contenido */
 .footer-content {

@@ -60,7 +60,7 @@ function Footer() {
   };
 
   const handleYouTubeClick = () => {
-    window.open('https://www.youtube.com/@spacekidsfoundation7819', '_blank');
+    window.open('https://www.youtube.com/@spacekidsfoundationok/', '_blank');
   };
 
   const handleLinkedIn = () => {
