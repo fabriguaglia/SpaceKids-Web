@@ -11,50 +11,6 @@ function Footer() {
   const navigate = useNavigate();
   const footerRef = useRef(null);
   
-  useEffect(() => {
-    // Animación de entrada del footer con GSAP
-    gsap.fromTo(
-      footerRef.current,
-      {
-        opacity: 0,
-        y: 50
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: footerRef.current,
-          start: "top bottom-=100",
-          end: "bottom",
-          toggleActions: "play none none reverse"
-        }
-      }
-    );
-
-    // Animación para los iconos sociales
-    gsap.fromTo(
-      ".social-btn",
-      {
-        scale: 0,
-        opacity: 0
-      },
-      {
-        scale: 1,
-        opacity: 1,
-        duration: 0.5,
-        stagger: 0.1,
-        ease: "back.out(1.7)",
-        scrollTrigger: {
-          trigger: footerRef.current,
-          start: "top bottom-=50",
-        }
-      }
-    );
-  }, []);
-
-
   const handleInstagramClick = () => {
     window.open('https://www.instagram.com/spacekidsfoundation/', '_blank');
   };
