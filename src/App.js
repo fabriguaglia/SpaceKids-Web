@@ -4,9 +4,9 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Menu from './components/Menu/Menu';
 import Header from "./components/Header/Header"
 import Nosotros from './components/Nosotros/Nosotros';
-import Footer from "./components/Footer/Footer"
-import Contacto from "./components/Contacto/Contacto"
-
+import Footer from "./components/Footer/Footer";
+import Contacto from "./components/Contacto/Contacto";
+import Proyectos from './components/Proyectos/proyectos';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
             <Route path="/" element={<Menu />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="/Proyectos" element={<Proyectos />} />
           </Routes>
         <Footer />
     </Router>
