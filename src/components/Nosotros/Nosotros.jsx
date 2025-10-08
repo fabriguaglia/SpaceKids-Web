@@ -15,32 +15,32 @@ const BoltIcon = () => (
 // Datos de las secciones para mapear
 const sectionsData = [
   { 
-    title: "Quienes somos", 
+    title: "QUIÉNES SOMOS", 
     text: "Somos una organización sin fines de lucro que se dedica a promover la educación y la pasión por el espacio y la tecnología entre jóvenes y niños de toda LATAM. Reconocemos y destacamos la importancia de estas áreas para el futuro y la necesidad de formar a las generaciones más jóvenes. Por ello, nuestra misión en la fundación es clara: preparar a más de un millón de jóvenes para el año 2035, marcando el inicio de la era interplanetaria (2032-2035)", 
     buttonText: "Descubre nuestros proyectos", 
     variant: "primary" 
   },
   { 
-    title: "Nuestra misión", 
+    title: "NUESTRA MISIÓN", 
     text: " Cómo llevamos a cabo esta misión? A través de una amplia gama de proyectos educativos que incluyen cursos, charlas, conferencias, eventos y más. Sin embargo, no lo hacemos solos. Hemos establecido colaboraciones exitosas con gobiernos y organizaciones comprometidas con la educación y la exploración espacial. Además, dependemos del apoyo crucial de empresas que nos permiten invertir en la educación y expandir nuestras operaciones como fundación.", 
     buttonText: "Explora las últimas noticias aquí", 
     variant: "primary" 
   },
   { 
-    title: "Objetivo", 
+    title: "OBJETIVO", 
     text: "Nuestro objetivo principal se centra en educar y fomentar el interés de niños y jóvenes en campos cruciales como STEM y áreas específicas como la economía espacial. Estamos comprometidos en inculcar el amor por la ciencia y la tecnología desde una edad temprana.", 
     buttonText: "Conectarse", 
     variant: "primary" 
   },
   { 
-    title: "Nuestros proyectos", 
+    title: "NUESTRO EQUIPO", 
     text: "Siempre estamos mirando hacia el horizonte estrellado en busca de nuevas aventuras y desafíos. Nuestro compromiso con la innovación nos lleva más allá de lo conocido. Con proyectos emocionantes, exploramos nuevos horizontes estelares en busca de aventuras y desafíos.", 
     buttonText: "Descubre nuestros proyectos", 
     variant: "primary" 
   },
 ];
 
-const Menu = () => {
+const Nosotros = () => {
     
     useEffect(() => {
         
@@ -146,4 +146,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Nosotros;
