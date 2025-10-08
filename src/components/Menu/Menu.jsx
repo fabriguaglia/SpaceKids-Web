@@ -129,7 +129,7 @@ const Menu = () => {
               <h1 className="main-title">
                 Descubre nuevas ideas, adquiere habilidades y amplía tus horizontes educativos con nuestra amplia gama de actividades. ¡Es hora de explorar, aprender y crecer juntos!
               </h1>
-              <Button variant="dark" className="get-started-button">
+              <Button variant="dark" className="get-started-button" href='/about'>
                 <BoltIcon />
                 Deslizá para comenzar
               </Button>
